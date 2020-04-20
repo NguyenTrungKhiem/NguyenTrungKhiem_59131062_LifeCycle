@@ -1,0 +1,4 @@
+﻿Câu 4 :Khi người sử dụng ấn nút Back các phương thức vòng đời được gọi là: onPause() -> onStop() -> onDestroy(). Sau đó mở lại ứng dụng là: onCreate() -> onStart() -> onResume().
+Câu 5 :  Khi người sử dụng ấn nút Home các phương thức vòng đời được gọi là:  onPause() -> onStop(). Sau đó mở lại ứng dụng là : onRestart() -> onStart() -> onResume()
+Câu 6 :  Nếu cần lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị của ứng dụng khi chạy lại ứng dụng thì cần phải thực hiện trong phương thức vòng đời : onPause() -> onResume
+- Vì callback onPause() sẽ được tạm dừng và lưu lại trong hệ thống. Để rồi khi chạy lại ứng dụng tức onResume được gọi lại ngay sau đó, thì thông tin sẽ được khôi phục và tiếp tục sử dụng như chưa hề có bất kỳ gián đoạn nào. 
